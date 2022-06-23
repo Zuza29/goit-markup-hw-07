@@ -18,33 +18,33 @@
 
   <body>
     <header class="header">
-      <div class="container">
-        <a href="index.html" class="link">
-          <span class="logo logo-blue">Web</span
-          ><span class="logo logo-black">Studio</span>
+      <div class="header-container">
+        <a href="index.html" class="header__link">
+          <span class="header__logo logo--blue">Web</span
+          ><span class="header__logo logo--black">Studio</span>
         </a>
         <nav>
           <ul class="menu">
-            <li class="menu-item">
-              <a href="index.html" class="active link">Agencja</a>
+            <li class="menu__item">
+              <a href="index.html" class="menu__link menu__link--active">Agencja</a>
             </li>
-            <li class="menu-item">
-              <a href="portfolio.html" class="link">Portfolio</a>
+            <li class="menu__item">
+              <a href="portfolio.html" class="menu__link">Portfolio</a>
             </li>
-            <li class="menu-item"><a href="..." class="link">Kontakt</a></li>
+            <li class="menu__item"><a href="..." class="menu__link">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="menu-2">
           <li>
-            <a href="mailto:info@devstudio.com" class="menu-2-item link"
-              ><svg class="header-icon-1">
+            <a href="mailto:info@devstudio.com" class="menu-2__link"
+              ><svg class="menu-2__icon icon--mail">
                 <use href="images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+48111111111" class="menu-2-item link"
-              ><svg class="header-icon-2">
+            <a href="tel:+48111111111" class="menu-2__link"
+              ><svg class="menu-2__icon icon--phone">
                 <use href="images/icons.svg#icon-phone"></use></svg
               >+48 111 111 111</a
             >
@@ -53,76 +53,73 @@
       </div>
     </header>
     <main>
-      <section class="section section-1">
-        <div class="main-page-top container">
+
+        <div class="hero container">
           <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-          <button type="button" data-modal-open>Zamów usługę</button>
+          <button type="button" class="hero__button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
-      <section class="section main-page-mid-1-list">
-        <div class="container">
+      <section>
+      <div class="container">
           <ul class="icon-list">
-            <li class="rectangle-list">
-              <div class="rectangle-list-item">
-                <svg class="rli-icon">
+            <li class="icon-list-rectangle">
+          
+                <svg class="icon-list-rectangle__icon">
                   <use href="images/icons.svg#icon-antenna"></use>
                 </svg>
-              </div>
+            
             </li>
-            <li class="rectangle-list">
-              <div class="rectangle-list-item">
-                <svg class="rli-icon">
+            <li class="icon-list-rectangle">
+            
+                <svg class="icon-list-rectangle__icon">
                   <use href="images/icons.svg#icon-clock"></use>
                 </svg>
-              </div>
+     
             </li>
-            <li class="rectangle-list">
-              <div class="rectangle-list-item">
-                <svg class="rli-icon">
+            <li class="icon-list-rectangle">
+            
+                <svg class="icon-list-rectangle__icon">
                   <use href="images/icons.svg#icon-diagram"></use>
                 </svg>
-              </div>
+             
             </li>
-            <li class="rectangle-list">
-              <div class="rectangle-list-item">
-                <svg class="rli-icon">
+            <li class="icon-list-rectangle">
+                <svg class="icon-list-rectangle__icon">
                   <use href="images/icons.svg#icon-astronaut"></use>
                 </svg>
-              </div>
             </li>
           </ul>
-          <ul class="main-page-mid-1-list">
-            <li class="text">
-              <span class="heading">Lorem ipsum</span>
-              <p>
+          <ul class="text-block-list">
+            <li class="text-block-list__item">
+              <span class="text-block-list__heading">Lorem ipsum</span>
+              <p class="text-block-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="text">
-              <span class="heading">Lorem ipsum</span>
-              <p>
+            <li class="text-block-list__item">
+              <span class="text-block-list__heading">Lorem ipsum</span>
+              <p class="text-block-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="text">
-              <span class="heading">Lorem ipsum</span>
-              <p>
+            <li class="text-block-list__item">
+              <span class="text-block-list__heading">Lorem ipsum</span>
+              <p class="text-block-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="text">
-              <span class="heading">Lorem ipsum</span>
-              <p>
+            <li class="text-block-list__item">
+              <span class="text-block-list__heading">Lorem ipsum</span>
+              <p class="text-block-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
           </ul>
         </div>
-      </section>
       <section class="section">
         <div class="main-page-mid-1 container">
           <h2>Czym się zajmujemy</h2>

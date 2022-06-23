@@ -10,6 +10,8 @@
 body {
   color: var(--text-black);
   font-family: "Roboto", "sans-serif";
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 ul,
@@ -57,17 +59,16 @@ img {
 
 /* Header */
 
-.header .container {
+.header-container {
   display: flex;
   align-items: center;
   width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
   background-color: #fff;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
   min-height: 80px;
@@ -75,19 +76,28 @@ img {
   align-items: center;
 }
 
-.menu {
-  display: flex;
+.header__link {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.menu a:visited {
+.menu {
+  display: flex;
+  margin-left: 93px;
+}
+
+.menu__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-black);
+  font-weight: 500;
+}
+
+.menu__link:visited {
   color: var(--text-black);
 }
 
-.header-contact a:visited {
-  color: var(--text-grey);
-}
-
-.logo {
+.header__logo {
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
@@ -96,36 +106,34 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo-blue {
+.logo--blue {
   color: var(--blue);
 }
 
-.logo-black {
+.logo--black {
   color: var(--text-black);
 }
 
-.logo-white {
+.logo--white {
   color: #fff;
 }
 
-.header nav a {
-  color: var(--text-black);
-  font-weight: 500;
-}
-
-.header a:hover,
-.header a:focus,
-.header a:active {
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active,
+.menu-2__link:hover,
+.menu-2__link:focus,
+.menu-2__link:active {
   color: var(--blue);
 }
 
-.active {
+.menu__link--active {
   position: relative;
   top: 0;
   left: 0;
 }
 
-.active::after {
+.menu__link--active::after {
   content: "";
   display: block;
   position: absolute;
@@ -144,26 +152,20 @@ img {
   align-items: center;
 }
 
-.menu-2 a {
+.menu-2__link {
   color: var(--text-grey);
   margin-left: 50px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.menu-item {
+.menu__item {
   margin-right: 46px;
   display: flex;
   align-items: center;
 }
 
-.menu a[href="index.html"] {
-  margin-left: 93px;
-}
-
-.menu-2-item:hover,
-.menu-2-item:focus,
-.menu-2-item:active {
-  color: var(--blue);
-}
+/* Not completed  */
 
 .menu-2-item:hover svg,
 .menu-2-item:focus svg,
@@ -171,26 +173,26 @@ img {
   fill: var(--blue);
 }
 
-.header-icon-1 {
+/* End */
+
+.icon--mail {
   height: 12px;
   width: 16px;
 }
 
-.header-icon-2 {
+.icon--phone {
   width: 10px;
   height: 16px;
 }
 
-.header-icon-1,
-.header-icon-2 {
+.menu-2__icon {
   margin-right: 10px;
   fill: var(--text-grey);
 }
 
 /* Main */
 
-.section-1 {
-  padding-top: 0;
+.hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -201,9 +203,6 @@ img {
   max-width: 1600px;
   max-height: 600px;
   margin: auto;
-}
-
-.main-page-top {
   color: #fff;
   font-weight: 900;
   font-size: 44px;
@@ -215,7 +214,7 @@ img {
   padding-bottom: 200px;
 }
 
-.main-page-top button {
+.hero__button {
   background-color: var(--blue);
   color: #fff;
   border-radius: 4px;
@@ -228,28 +227,12 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.main-page-mid-1,
-.main-page-mid-1-list,
-.main-page-mid-1-images {
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.main-page-mid-1-list {
+.text-block-list {
   display: flex;
-  padding: 0;
-  justify-content: center;
-}
-
-.main-page-mid-1-list li {
   color: var(--text-grey);
 }
 
-.main-page-mid-1-list > li {
-  margin-left: 15px;
-}
-
-.main-page-mid-1-list p {
+.text-block-list__paragraph {
   width: 270px;
   height: 120px;
   line-height: 1.5;
@@ -258,7 +241,7 @@ img {
   justify-content: center;
 }
 
-.text {
+.text-block-list__item {
   display: flex;
   flex-wrap: wrap;
 }
@@ -294,7 +277,7 @@ img {
   margin-right: 30px;
 }
 
-.rectangle-list {
+.icon-list-rectangle {
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -302,13 +285,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0;
+  margin-right: 30px;
 }
 
-.rli-icon {
+.icon-list-rectangle__icon {
   width: 70px;
   height: 70px;
-}
+  }
 
 .icon-list {
   display: flex;
@@ -318,11 +301,8 @@ img {
   margin-bottom: 30px;
 }
 
-.icon-list li:not(:last-child) {
-  margin-right: 30px;
-}
 
-.heading {
+.text-block-list__heading {
   color: var(--text-black);
   font-weight: 700;
   text-transform: uppercase;
