@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -19,7 +19,7 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <a href="index.html" class="header__link">
+        <a href="index.html">
           <span class="header__logo logo--blue">Web</span
           ><span class="header__logo logo--black">Studio</span>
         </a>
@@ -36,18 +36,16 @@
         </nav>
         <ul class="menu-2">
           <li>
-            <a href="mailto:info@devstudio.com" class="menu-2__link"
-              ><svg class="menu-2__icon icon--mail">
-                <use href="images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="menu-2__link">
+              <svg class="menu-2__icon icon--mail">
+              <use href="images/icons.svg#icon-envelope"></use></svg>
+              info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+48111111111" class="menu-2__link"
-              ><svg class="menu-2__icon icon--phone">
-                <use href="images/icons.svg#icon-phone"></use></svg
-              >+48 111 111 111</a
-            >
+            <a href="tel:+48111111111" class="menu-2__link">
+              <svg class="menu-2__icon icon--phone">
+              <use href="images/icons.svg#icon-phone"></use></svg>
+              +48 111 111 111</a>
           </li>
         </ul>
       </div>
@@ -505,9 +503,9 @@
             ></textarea>
           </label>
 
-          <div class="checkbox-container">
+           <div class="checkbox-container">
             <input
-              class="checkbox-container__web"
+              class="checkbox-container__default"
               type="checkbox"
               name="consent"
               value="consent"
@@ -516,14 +514,16 @@
 
             <label for="consent" class="checkbox-container__label">
               Oświadczam, iż akceptuję
-              <a class="checkbox-container__link" href="#rules">Regulamin</a> i
-              <a class="checkbox-container__link" href="#privacypolicy">Politykę Prywatności</a>.
+              <a href="#rules" class="checkbox-container__link">Regulamin</a> i
+              <a href="#privacypolicy" class="checkbox-container__link">Politykę Prywatności</a>.
             </label>
           </div>
           <button class="modal-form__button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
+
+
 
     <script src="js/modal.js"></script>
   </body>
