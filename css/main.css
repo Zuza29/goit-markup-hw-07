@@ -210,6 +210,9 @@ a {
 .menu-2__link:hover, .menu-2__link:focus, .menu-2__link:active {
   color: var(--blue);
 }
+.menu-2__link:hover svg, .menu-2__link:focus svg, .menu-2__link:active svg {
+  fill: var(--blue);
+}
 
 .menu__item {
   margin-right: 46px;
@@ -437,7 +440,32 @@ a {
   fill: var(--social-grey);
 }
 
-.footer-social__ellipse {
+.team-social-list__ellipse {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+.team-social-list__ellipse:hover {
+  background-color: var(--blue);
+}
+
+.team-social-list__ellipse:hover svg {
+  fill: #fff;
+}
+
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -449,17 +477,21 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
-.footer-social__ellipse:hover {
+.footer-social__link:hover {
   background-color: var(--blue);
   fill: #fff;
 }
 
-.footer-social__icon {
+.footer-social-icon {
   width: 20px;
   height: 20px;
   fill: #fff;
   display: flex;
   justify-content: center;
+}
+
+.footer-social__link:hover {
+  background-color: var(--blue);
 }
 
 .modal__close-btn {
@@ -573,6 +605,7 @@ a {
 
 .checkbox-container__link {
   color: var(--blue);
+  text-decoration: underline;
 }
 
 .checkbox-container__default {
@@ -589,9 +622,14 @@ a {
 }
 
 .checkbox-container__label {
-  margin: 0;
-  padding: 0;
-  align-self: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-grey);
+  padding-left: 40px;
+  margin-bottom: 4px;
+  margin-top: 10px;
 }
 .checkbox-container__label::before {
   content: "";
