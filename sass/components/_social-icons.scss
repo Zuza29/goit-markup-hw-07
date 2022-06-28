@@ -13,33 +13,13 @@
     justify-content: space-around;
 }
 
-.team-social-list__ellipse {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-
-
-&:hover {
-    background-color: var(--blue);
-    fill: #fff;
-} }
-
 .team-social-list__icon {
     width: 20px;
     height: 20px;
     fill: var(--social-grey);
+ }
 
-
-&:hover {
-    fill: #fff;
-} }
-
-.footer-social__link {
+.footer-social__ellipse {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +33,7 @@
 
     &:hover {
     background-color: var(--blue);
-    }
+    fill: #fff; }
 }
 
 .footer-social__icon {

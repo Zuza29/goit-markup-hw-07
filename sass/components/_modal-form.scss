@@ -1,16 +1,14 @@
-
-
 .modal-form {
     display: flex;
     flex-direction: column;
     position: relative;
 
     &::placeholder {
-            color: rgba(117, 117, 117, 0.5);
-            font-size: 12px;
-            line-height: 1.16;
-        }
+        color: rgba(117, 117, 117, 0.5);
+        font-size: 12px;
+        line-height: 1.16;
     }
+}
 
 .modal-form__label {
     font-size: 12px;
@@ -56,8 +54,8 @@
     &:focus-visible {
         outline: none;
         border: 1px solid var(--blue);
-        }
     }
+}
 
 
 .checkbox-container {
@@ -70,7 +68,6 @@
 .checkbox-container__link {
     color: var(--blue);
 }
-
 
 .checkbox-container__default {
     position: absolute;
@@ -91,15 +88,15 @@
     align-self: center;
 
     &::before {
-            content: "";
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin-left: 0;
-            margin-right: 7px;
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            border-radius: 2px;
-        }
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 0;
+        margin-right: 7px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 2px;
+    }
 }
 
 .modal-form__textarea {
@@ -125,8 +122,9 @@
     border: none;
 
     &:hover {
-    cursor: pointer;
-} }
+        cursor: pointer;
+    }
+}
 
 .modal-form__label:focus-within svg {
     fill: var(--blue);

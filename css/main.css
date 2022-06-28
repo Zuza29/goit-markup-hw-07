@@ -402,6 +402,9 @@ a {
   border-color: var(--blue);
   cursor: pointer;
 }
+.client-list__rectangle:hover:hover svg {
+  fill: var(--blue);
+}
 
 .client-list__rectangle--first {
   margin: 0;
@@ -428,31 +431,13 @@ a {
   justify-content: space-around;
 }
 
-.team-social-list__ellipse {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-}
-.team-social-list__ellipse:hover {
-  background-color: var(--blue);
-  fill: #fff;
-}
-
 .team-social-list__icon {
   width: 20px;
   height: 20px;
   fill: var(--social-grey);
 }
-.team-social-list__icon:hover {
-  fill: #fff;
-}
 
-.footer-social__link {
+.footer-social__ellipse {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,8 +449,9 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
-.footer-social__link:hover {
+.footer-social__ellipse:hover {
   background-color: var(--blue);
+  fill: #fff;
 }
 
 .footer-social__icon {
@@ -526,16 +512,6 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.modal-form::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
-}
-.modal-form:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
 }
 .modal-form::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -712,14 +688,6 @@ a {
   color: var(--text-grey);
   padding: 16px;
 }
-.footer-form__input::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-}
-.footer-form__input:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-}
 .footer-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -767,6 +735,7 @@ a {
   cursor: pointer;
 }
 
+/* Portfolio cards */
 .portfolio {
   padding-top: 56px;
 }
@@ -842,6 +811,7 @@ a {
   padding-left: 15px;
 }
 
+/* Buttons */
 .button-list {
   display: flex;
   justify-content: center;

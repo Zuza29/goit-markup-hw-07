@@ -19,6 +19,10 @@
             fill: var(--blue);
             border-color: var(--blue);
             cursor: pointer;
+
+    &:hover svg {
+        fill: var(--blue);
+    } 
 } }
 
 .client-list__rectangle--first {
